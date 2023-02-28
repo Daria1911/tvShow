@@ -1,0 +1,62 @@
+.App {
+    text-align: center;
+}
+
+.autoContainer {
+    padding: 12px 12px;
+    font-size: 20px;
+}
+
+.results {
+    display: flex;
+    margin-top: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(var(--lightGrey), 1);
+    background-color: #fff;
+    width: 100%;
+    border-radius: var(--imageBorderRadius);
+    overflow: hidden;
+}
+
+.image, .image img {
+    min-width: 94px;
+    width: 94px;
+    height: 141px;
+}
+
+.details {
+    width: 100%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+.release_date{
+    color: #999;
+    font-size: 1em;
+}
+
+.overview{
+    font-size: 1em;
+}
+
+.wrapper{
+    display: flex;
+    max-width: calc(100vw - 82px);
+}
+
+.show_page{
+    display: flex;
+}
+
+.header_poster {
+   padding-left: 25px;
+    align-items: center;
+}
+
+.selectShow {
+    width: 150px;
+}
