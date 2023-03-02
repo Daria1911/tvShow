@@ -60,3 +60,10 @@
 .selectShow {
     width: 150px;
 }
+
+.authentication{
+    flex-direction: column;
+}
+.authenticationButton{
+    padding-bottom: 10px;
+}

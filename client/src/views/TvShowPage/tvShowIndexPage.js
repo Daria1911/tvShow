@@ -1,9 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useEffect, useState } from 'react';
 import Container from 'react-bootstrap/Container';
-import Autocomplete from "../components/autocomplete.js";
-import ListOfShows from "../components/table.jsx";
-import { BASE_URL, key } from "../config/api.js";
+import Autocomplete from "../../components/autocomplete.js";
+import ListOfShows from "../../components/table.jsx";
+import { BASE_URL, key } from "../../config/api.js";
 import { useParams } from 'react-router-dom';
 
 function TvShowIndexPage() {

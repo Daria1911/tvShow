@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 
 const ListOfShows = ({ shows }) => {
+
 	return (
 		<Container>
 			<ul>
