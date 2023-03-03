@@ -16,7 +16,7 @@ function LogIn() {
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 	const [error, setError] = useState("");
-	const { logIn, signInWithGoogle } = useUserAuth();
+	const {user, logIn, signInWithGoogle } = useUserAuth();
 	const navigate = useNavigate();
 
 	const handleSubmit = (e) => {
@@ -42,7 +42,7 @@ function LogIn() {
 	};
 	return (
 		<div>
-			<Topbar/>
+			<Topbar user={user} />
 
 			<Container className="p-4 box">
 				<Row className="justify-content-md-center">
@@ -70,7 +70,7 @@ function LogIn() {
 						<Row className="authentication">
 							<Col  md="auto" className="authenticationButton">
 								<Button variant="primary" onClick={handleSubmit}>
-									Log In
+									Sign In
 								</Button>
 
 							</Col>

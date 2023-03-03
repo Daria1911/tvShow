@@ -27,7 +27,7 @@ function MainPage() {
 	return (
 
 		<div>
-			<Topbar/>
+			<Topbar user={user}/>
 			<Container className="p-3">
 
 				<Container className="p-5 mb-4 rounded-3">
