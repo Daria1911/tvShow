@@ -3,8 +3,7 @@ import { Navigate, Outlet } from "react-router-dom";
 import { useUserAuth } from "../Firebase/context.js";
 
 const ProtectedRoute = () => {
-	let { user } = useUserAuth();
-	console.log("sssssssssssss", user);
+	let {user} = useUserAuth();
 	return 	user ? <Outlet/> : <Navigate to="/login"/>
 
 };

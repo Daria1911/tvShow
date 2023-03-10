@@ -19,22 +19,30 @@ function LogIn() {
 	const {user, logIn, signInWithGoogle } = useUserAuth();
 	const navigate = useNavigate();
 
+
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		setError("");
 		logIn(email, password)
-			.then(() => {
-				navigate("/user");
+			.then((result) => {
+				if(result){
+					navigate("/user");
+				}
+
 			})
 			.catch(error => {
 				console.log(error);
 				setError(error.message);
 			});
 	};
+
 	const handleGoogleSignIn = () => {
 		signInWithGoogle()
-			.then(() => {
-				navigate("/user");
+			.then((result) => {
+
+				if(result){
+					navigate("/user");
+				}
 			})
 			.catch(error => {
 				setError(error.message);

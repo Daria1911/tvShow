@@ -67,3 +67,16 @@
 .authenticationButton{
     padding-bottom: 10px;
 }
+
+.userListOfShow{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.userListOfShow div{
+    margin-right: 10px;
+}
+
+.autocomplete {
+    margin-bottom: 40px;
+}

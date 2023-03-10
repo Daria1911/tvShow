@@ -1,8 +1,5 @@
 import app from "./firebase.js";
 import { getFirestore, collection, getDocs } from 'firebase/firestore';
 
-
-const db = getFirestore(app);
-
-
-export default db
+export const db = getFirestore(app);
+export const showList = collection(db, 'userList');

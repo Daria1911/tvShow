@@ -1,0 +1,21 @@
+.autoContainer{
+    background-color: white;
+    position: absolute;
+    border: 1px solid gray;
+    border-radius: 6px;
+}
+
+.inputSearch{
+    position: relative;
+}
+
+Link{
+    color: #000;
+    text-decoration: none;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+
+}

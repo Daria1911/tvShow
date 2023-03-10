@@ -13,7 +13,7 @@ const ListOfShows = ({ shows }) => {
 						<div className="wrapper">
 							<div className="image">
 								<Link to={`/show/selected/${show.id}`}>
-										<img src={`https://image.tmdb.org/t/p/w300/${show.poster_path}`} alt=""/>
+										<img src={`https://image.tmdb.org/t/p/w300${show.poster_path}`} alt=""/>
 								</Link>
 							</div>
 							<div xs={6} className="details">
